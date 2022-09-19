@@ -1,0 +1,19 @@
+argoCDNamespace: guku-argo-cd
+
+privateRepoSecrets:
+  secretStoreRef:
+    name: guku-external-secrets-store
+    kind: ClusterSecretStore
+  secretPrefix: "guku-argo-cd-"
+
+apps:
+  - name: sso
+    private: true
+    source:
+      path: chart
+      repoURL: git@github.com:devopzilla/sso.git
+      targetRevision: "v0.1.0"
+      helm:
+        releaseName: sso
+    destination:
+      namespace: default
