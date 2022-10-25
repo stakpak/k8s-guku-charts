@@ -4,7 +4,7 @@ kind: GrafanaDashboard
 metadata:
   name: grafana-dashboard-from-grafana
   labels:
-    app: grafana
+    app.kubernetes.io/instance:  grafana-operator
 spec:
   grafanaCom:
     id: 1860
