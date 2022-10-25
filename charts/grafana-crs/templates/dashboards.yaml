@@ -8,5 +8,5 @@ metadata:
 spec:
   grafanaCom:
     id: 1860
-    revision: 23
+    revision: 28
   json: ""
