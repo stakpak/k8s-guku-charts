@@ -1,5 +1,0 @@
-adminPassword:
-  secretName: sonarqube-admin-password
-  secret:
-    create: true
-    keepSecretOnRemove: false
