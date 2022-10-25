@@ -11,6 +11,17 @@ entries:
     urls:
     - https://github.com/devopzilla/k8s-guku-charts/releases/download/argo-cd-apps-0.1.1/argo-cd-apps-0.1.1.tgz
     version: 0.1.1
+  grafana-crs:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-25T20:45:28.89159239Z"
+    description: A Helm chart for Kubernetes
+    digest: e259eded146c1a262c2efdd8089877e9dd3d3c9d6de0082a42310fddc003a9e9
+    name: grafana-crs
+    type: application
+    urls:
+    - https://github.com/devopzilla/k8s-guku-charts/releases/download/grafana-crs-0.1.0/grafana-crs-0.1.0.tgz
+    version: 0.1.0
   sonarqube-secrets:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -22,4 +33,4 @@ entries:
     urls:
     - https://github.com/devopzilla/k8s-guku-charts/releases/download/sonarqube-secrets-0.1.0/sonarqube-secrets-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-25T20:36:57.556410408Z"
+generated: "2022-10-25T20:45:28.89159759Z"
