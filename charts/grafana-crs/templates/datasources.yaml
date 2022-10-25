@@ -1,0 +1,48 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDataSource
+metadata:
+  name: default-sources
+  namespace: guku-observability
+spec:
+  name: default-sources.yaml
+  datasources:
+    - name: Loki
+      type: loki
+      uid: loki
+      url: {{ .Values.loki.url }}
+      isDefault: false
+      version: 1
+      editable: false
+      jsonData:
+        manageAlerts: true
+        derivedFields:
+            - datasourceUid: tempo
+              matcherRegex: "traceID=(\\w+)"
+              name: TraceID
+              url: "$${__value.raw}"
+    - name: Prometheus
+      type: prometheus
+      uid: prometheus
+      url: {{ .Values.prometheus.url }}
+      isDefault: true
+      version: 1
+      editable: false
+      jsonData:
+        tlsSkipVerify: true
+        timeInterval: "5s"
+    - name: Tempo
+      type: tempo
+      uid: tempo
+      url: {{ .Values.tempo.url }}
+      version: 1
+      editable: false
+      isDefault: false
+      jsonData:
+        tracesToLogs:
+            datasourceUid: 'loki'
+        serviceMap:
+            datasourceUid: 'prometheus'
+        search:
+            hide: false
+        nodeGraph:
+            enabled: true

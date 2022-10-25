@@ -1,0 +1,8 @@
+loki:
+  url: http://loki-gateway:80
+
+prometheus:
+  url: http://prometheus-stack-kube-prom-prometheus:9090
+
+tempo:
+  url: http://tempo:3100
