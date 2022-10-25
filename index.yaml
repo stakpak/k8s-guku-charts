@@ -11,6 +11,17 @@ entries:
     urls:
     - https://github.com/devopzilla/k8s-guku-charts/releases/download/argo-cd-apps-0.1.1/argo-cd-apps-0.1.1.tgz
     version: 0.1.1
+  external-secrets-stores:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-10-25T21:32:31.666267226Z"
+    description: A Helm chart for Kubernetes external secret stores
+    digest: f80bacdd58e551dca263b9dbeab6b28066b5fb9254f53c888d645476ae17b192
+    name: external-secrets-stores
+    type: application
+    urls:
+    - https://github.com/devopzilla/k8s-guku-charts/releases/download/external-secrets-stores-0.1.0/external-secrets-stores-0.1.0.tgz
+    version: 0.1.0
   grafana-crs:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -53,4 +64,4 @@ entries:
     urls:
     - https://github.com/devopzilla/k8s-guku-charts/releases/download/sonarqube-secrets-0.1.0/sonarqube-secrets-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-25T21:02:49.542649665Z"
+generated: "2022-10-25T21:32:31.666278627Z"
