@@ -1,0 +1,13 @@
+aws:
+  enabled: true
+  accountID: "123456789012"
+  region: eu-west-2
+
+stores:
+  - name: guku-secrets
+    namespace: guku-secrets
+    clusterScoped: true
+    aws:
+      service: ParameterStore
+      roleName: guku-secrets
+

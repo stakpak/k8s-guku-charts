@@ -1,0 +1,12 @@
+{{- range .Values.stores }}
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    {{- if $.Values.aws.enabled }}
+    eks.amazonaws.com/role-arn: "arn:aws:iam::{{ $.Values.aws.accountID }}:role/{{ .aws.roleName }}"
+    {{- end }}
+  name: {{ .name }}
+  namespace: {{ .namespace }}
+---
+{{- end }}
