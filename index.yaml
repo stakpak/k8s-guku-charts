@@ -53,6 +53,17 @@ entries:
     urls:
     - https://github.com/devopzilla/k8s-guku-charts/releases/download/grafana-crs-0.1.0/grafana-crs-0.1.0.tgz
     version: 0.1.0
+  minio-tenant-secrets:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-27T17:15:49.956342094Z"
+    description: A Helm chart for Kubernetes
+    digest: bbf3f5cc368de2c6888ea077c45511f71ee0b4af5e445fd6b124b2a556a4e3d5
+    name: minio-tenant-secrets
+    type: application
+    urls:
+    - https://github.com/devopzilla/k8s-guku-charts/releases/download/minio-tenant-secrets-0.1.0/minio-tenant-secrets-0.1.0.tgz
+    version: 0.1.0
   sonarqube-secrets:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -64,4 +75,4 @@ entries:
     urls:
     - https://github.com/devopzilla/k8s-guku-charts/releases/download/sonarqube-secrets-0.1.0/sonarqube-secrets-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-25T21:32:31.666278627Z"
+generated: "2022-10-27T17:15:49.956354894Z"
