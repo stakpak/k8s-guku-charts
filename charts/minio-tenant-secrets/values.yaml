@@ -1,0 +1,6 @@
+keepSecretsOnRemove: false
+adminSecretName: minio-admin
+
+userSecretNames:
+  - minio-loki-user
+  - minio-tempo-user
